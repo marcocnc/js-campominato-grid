@@ -16,8 +16,7 @@ btnStart.addEventListener('click', function(){
 
         // creo i div con classe square per aggiungere i quadrati al container
         const square = document.createElement('div');
-        square.classList.add('square');
-        container.appendChild(square);
+        generaBox(square);
         
 
         // richiamo i quadrati dicendo che al click dell'utente aggiungeranno o toglieranno la classe clicked
@@ -29,3 +28,10 @@ btnStart.addEventListener('click', function(){
     }
 
 })
+
+// *************** FUNZIONI ********************
+
+function generaBox(newBox){
+    newBox.classList.add('square');
+    container.appendChild(newBox);
+}
