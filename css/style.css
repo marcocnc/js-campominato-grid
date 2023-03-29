@@ -60,3 +60,7 @@ body{
 .hide{
     display: none;
 }
+
+.clicked{
+    background-color: rgb(121, 255, 255);
+}
